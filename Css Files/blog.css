@@ -1,0 +1,83 @@
+html,
+body {
+  height: 100%;
+}
+*,
+div,
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.wraper {
+  min-height: 100%;
+  margin: 150px auto 0px auto;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content {
+  width: 90%;
+  margin: 30px auto 30px auto;
+  align-self: center;
+  border: red 1px solid;
+}
+
+.main-content {
+  width: 68%;
+  float: left;
+  border: 1px rgb(90, 129, 117) solid;
+  background-color: #f1f1f1;
+}
+
+.content .main-content .recent-post-title {
+  margin: 20px;
+}
+/* .content .main-content .post .post-preview {
+  width: 50%;
+  padding: 10px;
+  float: left;
+} */
+.content .main-content .post .post-title {
+  padding: 10px;
+}
+
+.content .main-content .post .post-details {
+  padding: 1px 15px 1px 15px;
+}
+.content .main-content .post {
+  width: 95%;
+  height: 270px;
+  border-radius: 5px;
+  margin: 10px auto;
+  background-color: white;
+}
+
+.content .main-content .post .read-more {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.content .main-content .post img {
+  padding: 15px;
+  width: 250px;
+  height: 150px;
+  float: left;
+}
+.content .main-content .post .post-preview {
+  padding: 15px;
+  font-size: 1.2em;
+  line-height: 25px;
+}
+
+/*
+.sidebar {
+  width: 30%;
+  float: left;
+  border: grey dashed 1px;
+  height: 300px;
+}
+*/
