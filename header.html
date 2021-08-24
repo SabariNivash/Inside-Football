@@ -1,0 +1,65 @@
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/Inside_Football/Css Files/header.css">
+</head>
+
+<header>
+    <nav class="navigation">
+        <div class="navigationContainer">
+            <div class="logo">
+                <a href="#">
+                    <!-- <img src="images/Inside_Football-Logo-300x103.png" alt="Inside_Football_logo" height="50"
+                            width="150"> -->
+                    <img src="images/Inside_Football-Logo-300x103.png" alt="Inside_Football_logo">
+                </a>
+            </div>
+
+            <i class="fa fa-bars menu-toggle"></i>
+
+            <ul class="navList ">
+                <li class="navItem">
+                    <a class="navLink" href="home.html"> Home </a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="blog.html"> Blog </a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="about.html"></a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="store.html"> Store </a>
+                </li>
+                <!-- <li class="navItem">
+                    <a class="navLink" href="events.html"> Events </a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+</header>
+<script>
+
+    // Navigation Shrink
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+        console.log("scroll")
+
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.querySelector(".navigation").style.padding = "18px 10px";
+            // document.getElementById("logo").style.fontSize = "25px";
+        } else {
+            document.querySelector(".navigation").style.padding = "30px 10px";
+            // document.getElementById("logo").style.fontSize = "35px";
+        }
+    }
+
+    // Navigation Menu - Toggle
+    $(document).ready(function () {
+        $(".navigationContainer .menu-toggle").on("click", function () {
+            console.log("clciked")
+            $(".navList").toggleClass("showing");
+        });
+    });
+
+</script>
